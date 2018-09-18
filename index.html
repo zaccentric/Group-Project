@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--
-	Dev:Geisler Lippmann
- 	Dev:Zachary Moore
-	Date: 09/09/18
+    Dev:Geisler Lippmann
+    Dev:Zachary Moore
+    Date: 09/09/18
 -->
     <head>
         <meta charset="utf-8"/>
@@ -22,27 +22,25 @@
           <a href="mars.html">Our Destination</a>
         </div>
         <div class="mission">
-        	<p>
-        	Mars is a rich destination for scientific discovery and robotic and human exploration like no other. Its formation and evolution are comparable to Earth, helping us learn more about our own planet’s history and future. Mars had conditions suitable for life in its past that we know it true. Future exploration could uncover evidence of life even answering one of the fundamental mysteries of the cosmos. "Are we alone?" With your help we could alter the course of history and bring about a new golden age for humanity.
+            <p>
+            Mars is a rich destination for scientific discovery and robotic and human exploration like no other. Its formation and evolution are comparable to Earth, helping us learn more about our own planet's history and future. Mars had conditions suitable for life in its past that we know it true. Future exploration could uncover evidence of life even answering one of the fundamental mysteries of the cosmos. "Are we alone?" With your help we could alter the course of history and bring about a new golden age for humanity.
         </p>
         </div>        
         <div class="helpWanted">
-        	<img src="marsposter1.jpg" alt="marsposter">
+            <img src="marsposter1.jpg" alt="marsposter">
         </div>  
         
-
-
         <article>
             <h2 id="registerheading">Sign up for our Newsletter to stay up-to-date on the Mission!</h2>
         <form id="newsletter">
             <fieldset id="contactinfo">
               <label for="fnameinput">
                 First Name:
-                <input type="text" id="firstnameinput" name="fname" placeholder="John"/>
+                <input type="text" id="fnameinput" name="fname" placeholder="John"/>
               </label>
               <label for="lnameinput">
                 <br>Last Name: 
-                <input type="text" id="lastnameinput" name="lname" placeholder="Doe"/>
+                <input type="text" id="lnameinput" name="lname" placeholder="Doe"/>
               </label>
               <label for="emailinput">
                 <br>Email: 
@@ -57,8 +55,8 @@
         </article>
         <script>
             function submitInfo(){
-            var fname = document.getElementById("firstnameinput");
-            var lname = document.getElementById("lastnameinput");
+            var fname = document.getElementById("fnameinput");
+            var lname = document.getElementById("lnameinput");
             var email = document.getElementById("emailinput");
             (fname.value && lname.value && email.value) ? 
                 alert("You have been added to our Newsletter mailing list.") : alert("Please fill in all required fields.");
@@ -71,16 +69,16 @@
         <div id="questions">
        <form id="questionbox">
              <fieldset>
-                <label for="emailinput">
+                <label for="emailin">
                     <br>Email: 
-                    <input type="email" id="emailarea" name="email" placeholder="email@email.com"/>
+                    <input type="email" id="emailin" name="email" placeholder="email@email.com"/>
                 </label>
                   <input type="button" id="submitquestion" value="Submit"/>
                   <input type="reset" value="Clear"/>
             </fieldset>
             <fieldset>
               <label for="qinput">
-                <input type="text" id="questionarea" name="fname" />
+                <input type="text" id="qinput" name="fname" />
               </label>
             </fieldset>
          </form>
@@ -88,7 +86,7 @@
         
         <script>
             function submitQuestion(){
-            var question = document.getElementById("questionarea");
+            var question = document.getElementById("qinput");
             var email = document.getElementById("emailarea");
             (question.value && email.value) ? 
                 alert("We will get back to you shortly!") : alert("Please fill in all required fields.");

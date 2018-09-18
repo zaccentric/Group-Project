@@ -71,7 +71,7 @@ header {
     width: 30%;
     padding-bottom: 60px;
 }
-#questionbox #questionarea {
+#questionbox #qinput {
     height: 100px;
     width: 300px;
 }
