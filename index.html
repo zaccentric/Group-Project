@@ -9,7 +9,7 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <script src="modernizr.custom.05819.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Poppins" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto" rel="stylesheet">
         <title>Mars Mission</title>
     </head>    
     <body>    
@@ -38,15 +38,15 @@
             <fieldset id="contactinfo">
               <label for="fnameinput">
                 First Name:
-                <input type="text" id="firstnameinput" name="fname" />
+                <input type="text" id="firstnameinput" name="fname" placeholder="John"/>
               </label>
               <label for="lnameinput">
                 <br>Last Name: 
-                <input type="text" id="lastnameinput" name="lname" />
+                <input type="text" id="lastnameinput" name="lname" placeholder="Doe"/>
               </label>
               <label for="emailinput">
                 <br>Email: 
-                <input type="text" id="emailinput" name="email" />
+                <input type="email" id="emailinput" name="email" placeholder="email@email.com"/>
               </label>
             </fieldset>
             <fieldset id="submitbutton">
@@ -70,15 +70,15 @@
         
         <div id="questions">
        <form id="questionbox">
-             <fieldset id="submitbutton">
+             <fieldset>
                 <label for="emailinput">
                     <br>Email: 
-                    <input type="text" id="emailarea" name="email" />
+                    <input type="email" id="emailarea" name="email" placeholder="email@email.com"/>
                 </label>
-                  <input type="button" id="submitquestion" value="Submit" />
+                  <input type="button" id="submitquestion" value="Submit"/>
                   <input type="reset" value="Clear"/>
             </fieldset>
-            <fieldset id="contactinfo">
+            <fieldset>
               <label for="qinput">
                 <input type="text" id="questionarea" name="fname" />
               </label>
