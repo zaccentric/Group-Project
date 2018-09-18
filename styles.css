@@ -37,7 +37,17 @@ header {
     padding-top: 7px;
     padding-bottom: 7px;
     color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#questionheading {
+        font-size: 30px;
+    text-align: center;  
+    padding-left: 10%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: black;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 /* forms */ 
@@ -61,8 +71,9 @@ header {
     width: 50%;
     padding-bottom: 60px;
 }
-#questionbox {
-
+#questionbox #questionarea{
+    height: 100px;
+    width: 300px;
 }
 
 /* sidebar */
