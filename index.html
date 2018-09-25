@@ -70,20 +70,60 @@
         <div id="share">
            
             <p>Wanna share this page with friends and family? Enter their email address below.</p>
-           <form>
+           
+<!--
+            <form>
                <input type="text" name="email0">
                 <input type="text" name="email1">
                 <br>
                 <input type="text" name="email2">
-                <input type="text" name="email3">  
-           </form>
-           
+                <input type="text" name="email3">
+            </form>
+
+
             <button onclick="sendEmail()">Share</button>
         </div>
         
+-->
+        <input type="text" id="txtBxHome"></input>
+        <input type="button" id="btnAdd" value="Add" onclick="addEmail();"></input>
+        <input type="button" id="btnFinish" value="Finish" onclick="displayEmail();"></input>
+        <p hidden id="show">Email(s) sent to: </p>
+        <div id="Finish"></div>  
+        
+
+
+        
+
         <script>
-            var emailArray = [];
-            
+		
+
+        var temp = 0;
+        var emailArray = [];
+
+        function addEmail()
+        {
+
+            emailArray[temp] = document.getElementById("txtBxHome").value;
+            alert("Email Added: " + emailArray[temp]);
+            temp++;
+            document.getElementById("txtBxHome").value = "";
+        }
+
+        function displayEmail()
+        {    
+            document.getElementById("show").style.visibility = "visible";
+            document.getElementById("show").style.display= "block";
+   
+            var line = "<hr/>";   
+
+            for (var y=0; y<emailArray.length; y++)
+            {
+                line += emailArray[y] + "<br/>";
+            }
+            document.getElementById("Finish").innerHTML = line;
+        }	
+           
         </script>
         <footer>
             <p>&copy; Zach & Geisler</p>
