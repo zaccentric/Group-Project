@@ -47,6 +47,42 @@
         
         <p>Let the journey begin.</p>
         
+        <hr>
+        
+        <h2 id="questionheading">Let us know if you have any unanswered questions!</h2>
+        
+        <div id="questions">
+       <form id="questionbox">
+             <fieldset>
+                <label for="emailin">
+                    <br>Email: 
+                    <input type="email" id="emailin" name="email" placeholder="email@email.com"/>
+                </label>
+                  <input type="button" id="submitquestion" value="Submit"/>
+                  <input type="reset" value="Clear"/>
+            </fieldset>
+            <fieldset>
+              <label for="qinput">
+                <input type="text" id="qinput" name="fname" />
+              </label>
+            </fieldset>
+         </form>
+        </div>
+        
+        <script>
+            function submitQuestion() {
+                
+            var question = document.getElementById("qinput");
+            var email = document.getElementById("emailarea");
+                
+            (question.value && email.value) ? 
+                alert("We will get back to you shortly!") : alert("Please fill in all required fields.");
+            } 
+            
+            document.getElementById("submitquestion").addEventListener("click", submitQuestion, false);
+            
+        </script>
+        
         <footer>
             <p>&copy; Zach & Geisler</p>
         </footer>   

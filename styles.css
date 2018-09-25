@@ -76,6 +76,26 @@ header {
     width: 300px;
 }
 
+/* share */
+
+#share {
+    padding-left: 0%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+#share form {
+    text-align: center;
+    font-size: 25px;
+    padding-left: 10%;
+}
+
+
+
+#share button {
+    margin-top: 20px;
+}
 /* sidebar */
 
 .sidebar {
